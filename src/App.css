@@ -1,0 +1,26 @@
+/* Full-page animated gradient background */
+body, html {
+  background: linear-gradient(135deg, #385ce0, #9242e3);
+  font-family: Arial, sans-serif;
+  background-size: 100% 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://t3.ftcdn.net/jpg/08/16/95/68/360_F_816956868_a7kupyF6kN34v2mDJX4LOaUnEMuMqiWe.jpg') no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.App::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(118, 153, 118, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
